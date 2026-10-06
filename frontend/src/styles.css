@@ -24,3 +24,10 @@ input { border: 1px solid var(--line); padding: 6px 8px; font: inherit; width: 1
 .topnav { display: flex; gap: 12px; padding: 8px 16px; border-bottom: 1px solid var(--line); font-size: 13px; }
 .topnav a { color: inherit; }
 .muted { color: #5a5045; font-size: 13px; }
+.pick { display: flex; align-items: center; gap: 8px; }
+.pick input[type="checkbox"] { width: auto; margin: 0; }
+.preview { border-style: dashed; background: #fdf6e3; }
+.preview button { margin: 6px 8px 0 0; }
+button.ghost { background: transparent; color: var(--accent); }
+button:disabled { opacity: .5; cursor: default; }
+.err { background: #f3d9d0; }

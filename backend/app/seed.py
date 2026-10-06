@@ -11,6 +11,10 @@ def init_db():
       due_date TEXT, lent_at TEXT, returned_at TEXT
     );
     CREATE TABLE IF NOT EXISTS settings(key TEXT PRIMARY KEY, value TEXT);
+    CREATE TABLE IF NOT EXISTS return_batches(
+      id TEXT PRIMARY KEY, loan_ids TEXT, status TEXT, preview TEXT,
+      created_at TEXT, committed_at TEXT
+    );
     """)
     if c.execute("SELECT COUNT(*) c FROM items").fetchone()["c"] == 0:
         c.executemany("INSERT INTO items(title,owner,status,data_quality) VALUES (?,?,?,?)", [
