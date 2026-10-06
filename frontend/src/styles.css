@@ -24,3 +24,9 @@ input { border: 1px solid var(--line); padding: 6px 8px; font: inherit; width: 1
 .topnav { display: flex; gap: 12px; padding: 8px 16px; border-bottom: 1px solid var(--line); font-size: 13px; }
 .topnav a { color: inherit; }
 .muted { color: #5a5045; font-size: 13px; }
+.chk { width: auto; margin: 0 8px 0 0; }
+.preview { background: #e4ecd9; }
+.preview .row { margin-top: 8px; display: flex; gap: 8px; }
+.blocked { color: #8a2f22; font-size: 13px; }
+button.ghost { background: transparent; color: var(--ink); }
+button:disabled { opacity: .5; cursor: default; }
